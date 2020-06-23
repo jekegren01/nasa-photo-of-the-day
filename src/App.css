@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 30px;
+  height: 18vmin;
   pointer-events: none;
+  padding: 15px 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.apod {
+  height: 50vh;
+}
+
+p {
+  margin: 20px 25px;
+  text-align: justify;
+  font-family: Arial;
+  font-size: 15px;
+
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
 }

@@ -40,14 +40,27 @@
 }
 
 .apod {
-  height: 50vh;
+  height: 30vh;
 }
 
+@media (min-width: 500px) {
+  .apod {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .apod {
+    height: 60vh;
+  }
+}
+
+
 p {
-  margin: 20px 25px;
-  text-align: justify;
+  margin: 20px 45px;
+  text-align: center;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 24px;
 
 }
 

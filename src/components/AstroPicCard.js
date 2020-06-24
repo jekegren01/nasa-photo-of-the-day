@@ -1,6 +1,7 @@
 import React from "react";
 
 const AstroPicCard = (props) => {
+    if (!props.hdurl) return <h3>Loading...</h3>
     return (
         <div>
             <h2>This picture was released on: {props.date}</h2>

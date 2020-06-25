@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AstroPicCard from "./AstroPicCard";
 
+
 export default function AstroPicList() {
     const [astroPics, setAstroPics] = useState([]);
 

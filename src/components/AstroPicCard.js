@@ -1,5 +1,6 @@
 import React from "react";
 import { P } from "../App";
+import { TextDiv } from "../App";
 
 
 const AstroPicCard = (props) => {
@@ -9,7 +10,9 @@ const AstroPicCard = (props) => {
             <h2>This picture was released on: {props.date}</h2>
             <img className="apod" src={props.hdurl} alt="apod pic of the day" />
             <P className="copyright">This picture is copyrighted by: {props.copyright}</P>
-            <P maintext="maintext">{props.explanation}</P>
+            <TextDiv>
+                <P maintext="maintext">{props.explanation}</P>
+            </TextDiv>
         </div>
     )
 };

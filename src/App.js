@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import logo from "./assets/telescope.jpg";
+import logo2 from "./assets/logo512.png"
 import AstroPicList from "./components/AstroPicList";
 import styled, { css } from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,6 +23,17 @@ ${props =>
     `}
 `;
 
+export const TextDiv = styled.div`
+  width: 70vw;
+`;
+
+export const PicDiv = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+`;
+
 function App() {
     return (
       <Container>
@@ -29,8 +41,12 @@ function App() {
         <div className="App">
             <div className="logo-container">
               <img className="App-logo" src={logo} alt="Telescope Logo" />
-              <h1>Astronomy Pic of the Day</h1>
-              <AstroPicList />
+                <h1>Astronomy Pic of the Day</h1>
+              <PicDiv>
+                <img className="App-logo" src={logo2} alt="Telescope Logo" />
+                <AstroPicList />
+                <img className="App-logo" src={logo2} alt="Telescope Logo" />
+              </PicDiv>
             </div>
         </div> 
         </div>

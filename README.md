@@ -1,6 +1,6 @@
 # Module Project: Component Side Effects- NASA APOD
 
-This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn. 
+This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn.
 
 ## Instructions
 
@@ -38,7 +38,7 @@ Follow these steps for completing your project.
 - [ ] Your team lead will count the project as complete by merging the branch back into `main` branch.
 - [ ] Do your magic!
 
-# _Project - NASA APOD - Part I_
+`# _Project - NASA APOD - Part I_
 
 - This is a really fun project, and one to show your family and friends when you've finished.
 - You will be starting from scratch and building the entire app
@@ -47,19 +47,19 @@ Follow these steps for completing your project.
 
 ## Directions
 
-**Step 1 - Planning**
+`**Step 1 - Planning**
 
 - [ ] If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
 - [ ] Once you have a design plan in mind, break down the designs into individual components.
 - [ ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
 - [ ] Now it's time to jump into the code!
 
-**Step 2 - File structure**
+`**Step 2 - File structure**
 
 - [ ] Take a look at your planned components. Create the folders and files you need for each component.
 - [ ] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
 
-**Step 3 - Fetching the Data**
+`**Step 3 - Fetching the Data**
 
 - [ ] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
 - [ ] Add an effect hook to handle the API call side effect.
@@ -72,12 +72,11 @@ Follow these steps for completing your project.
 DEMO KEY rate limits:
 
 > Hourly Limit: 30 requests per IP address per hour
-
 > Daily Limit: 50 requests per IP address per day
 
 _Note: if the photo url is NOT a photo, you will need to learn how to display a video in a React app on your own, OR just fetch the APOD from a different date by adding this to the back of the API endpoint: `&date=2012-03-14`_
 
-**Step 4 - Adding the Data to State**
+`**Step 4 - Adding the Data to State**
 
 - [ ] Once you have made the call correctly, and logged the data, add the data to the state property you built.
 
@@ -89,7 +88,7 @@ Now is the time to build out your other components. Compose your UI, and then pa
 - [ ] Use the effect hook to fetch the APOD data when the component mounts.
 - [ ] Display the APOD data in different components that are composed together to build your UI.
 
-## Pro Tips:
+`## Pro Tips:
 
 - You may run into an error where your components try to access object properties before your data is finished being fetched - ie. `Cannot read property 'url' of undefined`. This means that the data you passed as props is undefined, when you were expecting it to be an object. You can fix this by simply adding something like this to any component that needs to read data from your state object:
 
@@ -112,5 +111,4 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - [ ] Notice the optional query param `date`? You can pass a different date in your url like this `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14` to get the APOD from a different date. Add a date dropdown that allows you to select a different date and see that APOD. This will be quite a bit of work, but it will be a fantastic exercise to go through a little more complicated logic and interaction in your app. This is also a very common type of interaction, so it would be good to try this out
 - [ ] Make another app that consumes another one of NASA's other APIs listed on the same website
 
-
- ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)
+` ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)

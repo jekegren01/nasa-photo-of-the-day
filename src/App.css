@@ -1,10 +1,13 @@
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 30px;
+  height: 18vmin;
   pointer-events: none;
+  padding: 15px 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +38,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.apod {
+  height: 30vh;
+}
+
+@media (min-width: 500px) {
+  .apod {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .apod {
+    height: 60vh;
+  }
+}
+
+/* p {
+  margin: 20px 45px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+} */
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
 }
